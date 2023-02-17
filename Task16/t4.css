@@ -1,0 +1,27 @@
+div{
+    background-color: rgb(119, 131, 140);
+    padding: 15px;
+    margin: 90px auto;
+    height: 200px;
+    width: 200px;
+position: relative;
+border-bottom:5px solid black ;
+}
+.a::after{
+    content: "Elzero";
+    position: absolute;
+    color: white;
+    top: 205px;
+}
+.a::before{
+    content: "";
+    background-color: black;
+    width:69%;
+    height:69%;
+    position: absolute;
+    left:32px ;
+    transform: rotate(44.5deg);
+    top: -80.5px;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+}

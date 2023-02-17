@@ -1,0 +1,53 @@
+div{
+    background-color: rgb(255, 255, 255);
+    margin: 40px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(250, 5, 86);
+    border-left-color: transparent;
+ animation-duration: 1s;
+ position: relative;
+ animation-timing-function: linear;
+  animation-name: Task1;
+  animation-iteration-count: infinite;
+}
+.a:hover{
+    transform: rotate(1turn);
+}
+.a::before{
+    content: "";
+    position: absolute;
+    margin: 40px auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid rgb(7, 121, 242);
+    border-top-color: transparent;
+ left: -15px;
+ top: -55px;
+}
+.a::after{
+    content: "";
+    position: absolute;
+    margin: 40px auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid rgb(250, 147, 3);
+    border-right-color: transparent;
+ left: -25px;
+ top: -65px;
+}
+@keyframes Task1{
+    0%{
+      transform: rotate(0turn);  
+    }
+    100%{
+        transform: rotate(1turn);  
+      }
+     
+}
+.a:hover{
+    animation-play-state:paused;
+}
